@@ -37,6 +37,7 @@ export default defineConfig({
     target: 'esnext',
   },
   test: {
+    include: ['test/**/*.civet', 'test/**/*.ts'],
     environment: 'jsdom',
     transformMode: {
       web: [/.civet?/]
