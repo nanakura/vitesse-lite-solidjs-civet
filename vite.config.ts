@@ -14,7 +14,7 @@ export default defineConfig({
       outputTransformerPlugin: 'solid',
     }),
     Unocss({
-      include: ["*.civet"]
+      include: ["src/**/*.civet"]
     }),
     AutoImport({
       imports: [
