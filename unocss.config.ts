@@ -28,7 +28,6 @@ export default defineConfig({
       },
     }),
   ],
-  include: ['*.civet']
   // transformers: [
   //   transformerDirectives(),
   //   transformerVariantGroup(),

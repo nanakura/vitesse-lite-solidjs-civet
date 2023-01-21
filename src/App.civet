@@ -1,5 +1,5 @@
 import { Component, Suspense } from 'solid-js'
-import CompoA from './components/CompoA.civet'
+import Footer from './components/Footer.civet'
 import routes from '~solid-pages'
 import { Router, useRoutes } from '@solidjs/router'
 
@@ -8,6 +8,7 @@ const App: Component = () =>
   <main class="font-sans px-4 py-10 text-center text-gray-700 dark:text-gray-200">
     <Router>
       <Routes/>
+    <Footer/>
 
 function Routes() {
   return (
