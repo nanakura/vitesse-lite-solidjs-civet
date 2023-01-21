@@ -1,7 +1,9 @@
 /* @refresh reload */
 { render } from 'solid-js/web'
 
-import './index.css'
+import '@unocss/reset/tailwind.css'
+import 'uno.css'
+import './styles/main.css'
 App from './App.civet'
 
 render () => <App />, document.getElementById('root') as HTMLElement

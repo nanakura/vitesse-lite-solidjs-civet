@@ -1,7 +1,15 @@
-{Component} from 'solid-js'
+{Component, createSignal} from 'solid-js'
+{useNavigate} from '@solidjs/router'
 
-const Index:Component = () ->
-	<div>
+const Index:Component = () =>
+	[name, setName] := createSignal('')
+	navigate := useNavigate()
+	function go() {
+		if (name())
+		navigate(`/hi/${encodeURIComponent(name())}`)
+	}
+
+	<div class="background-red">
 		xxxxx
 
 
