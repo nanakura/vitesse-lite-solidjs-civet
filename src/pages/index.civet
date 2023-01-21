@@ -1,0 +1,8 @@
+{Component} from 'solid-js'
+
+const Index:Component = () ->
+	<div>
+		xxxxx
+
+
+export default Index
