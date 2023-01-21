@@ -1,3 +1,5 @@
+/// <reference types="vitest"/>
+
 import { defineConfig } from 'vite'
 import solidPlugin from 'vite-plugin-solid'
 import civetPlugin from 'vite-plugin-civet'
@@ -34,4 +36,12 @@ export default defineConfig({
   build: {
     target: 'esnext',
   },
+  test: {
+    environment: 'jsdom',
+    transformMode: {
+      web: [/.civet?/]
+    },
+    threads: false,
+    isolate: false
+  }
 })

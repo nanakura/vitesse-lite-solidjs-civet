@@ -1,0 +1,14 @@
+{ createSignal } from 'solid-js'
+
+export default function Counter({initial}: {initial: number}) {
+	[count, setCount] := createSignal(initial ?? 0)
+	increment := () => setCount count() + 1
+	decrement := () => setCount count() - 1
+	return
+		<div>
+			{count()}
+			<button class="inc" onClick={() => increment()}>
+				+
+			<button class="dec" onClick={() => decrement()}>
+				-
+}
