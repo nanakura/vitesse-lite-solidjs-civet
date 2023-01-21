@@ -1,0 +1,22 @@
+{
+  "name": "playground-solid",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "vite": "^4.0.1",
+    "vite-plugin-civet": "^0.2.5",
+    "vite-plugin-solid": "^2.5.0"
+  },
+  "dependencies": {
+    "solid-js": "^1.6.5"
+  }
+}

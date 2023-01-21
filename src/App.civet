@@ -1,0 +1,22 @@
+import { Component } from 'solid-js'
+import CompoA from './components/CompoA.civet'
+
+import logo from './logo.svg'
+import styles from './App.module.css'
+
+const App: Component = () ->
+    <div class={styles.App}>
+      <header class={styles.header}>
+        <img src={logo} class={styles.logo} alt="logo" />
+        <p>
+          Edit <code>src/App.civet</code> and save to reload.
+        <CompoA>
+        <a
+          class={styles.link}
+          href="https://github.com/solidjs/solid"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn Solid
+
+export default App;
