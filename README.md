@@ -3,6 +3,10 @@
 </p>
 > This repo is in WIP
 
+<h6 align='center'>
+<a href="https://vitesse-lite-solidjs-civet.netlify.app/">Live Demo</a>
+</h6>
+
 <h5 align='center'>
 <b>Solidjs version with <a href="https://github.com/DanielXMoore/Civet">Civet</a> of <a href="https://github.com/nanakura/vitesse-lite-solidjs">Vitesse Lite</a></b>
 </h5>
