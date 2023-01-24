@@ -5,6 +5,7 @@ specifiers:
   '@solid-primitives/media': ^2.0.5
   '@solid-primitives/storage': ^1.3.4
   '@solidjs/router': ^0.7.0
+  '@types/node': ^18.11.18
   '@unocss/reset': ^0.48.4
   jsdom: ^21.0.0
   solid-js: ^1.6.5
@@ -28,14 +29,15 @@ dependencies:
 
 devDependencies:
   '@iconify-json/carbon': 1.1.13
+  '@types/node': 18.11.18
   '@unocss/reset': 0.48.4
   jsdom: 21.0.0
   solid-testing-library: 0.5.0_solid-js@1.6.9
   taze: 0.8.5
   typescript: 4.9.4
   unocss: 0.48.4_vite@4.0.4
-  vite: 4.0.4
-  vite-plugin-civet: 0.2.5
+  vite: 4.0.4_@types+node@18.11.18
+  vite-plugin-civet: 0.2.5_@types+node@18.11.18
   vite-plugin-pages: 0.28.0_vite@4.0.4
   vite-plugin-solid: 2.5.0_solid-js@1.6.9+vite@4.0.4
   vitest: 0.27.2_jsdom@21.0.0
@@ -1051,7 +1053,7 @@ packages:
       chokidar: 3.5.3
       fast-glob: 3.2.12
       magic-string: 0.27.0
-      vite: 4.0.4
+      vite: 4.0.4_@types+node@18.11.18
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -3647,13 +3649,13 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-civet/0.2.5:
+  /vite-plugin-civet/0.2.5_@types+node@18.11.18:
     resolution: {integrity: sha512-87Ke/Zzr+qMIT8o45umx1pfsHdhM6u/UHPUD0p7eM1qT2VjCPGbt6BuFX5elN4tc2CTYeLigVQeNL9sgP9Ycvw==}
     dependencies:
       '@danielx/civet': 0.5.48
       '@rollup/pluginutils': 5.0.2
       cheerio: 1.0.0-rc.12
-      vite: 4.0.4
+      vite: 4.0.4_@types+node@18.11.18
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -3681,7 +3683,7 @@ packages:
       json5: 2.2.3
       local-pkg: 0.4.3
       picocolors: 1.0.0
-      vite: 4.0.4
+      vite: 4.0.4_@types+node@18.11.18
       yaml: 2.2.1
     transitivePeerDependencies:
       - supports-color
@@ -3699,43 +3701,10 @@ packages:
       merge-anything: 5.1.4
       solid-js: 1.6.9
       solid-refresh: 0.4.1_solid-js@1.6.9
-      vite: 4.0.4
+      vite: 4.0.4_@types+node@18.11.18
       vitefu: 0.2.4_vite@4.0.4
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /vite/4.0.4:
-    resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': '>= 14'
-      less: '*'
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      esbuild: 0.16.17
-      postcss: 8.4.21
-      resolve: 1.22.1
-      rollup: 3.10.0
-    optionalDependencies:
-      fsevents: 2.3.2
     dev: true
 
   /vite/4.0.4_@types+node@18.11.18:
@@ -3780,7 +3749,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.0.4
+      vite: 4.0.4_@types+node@18.11.18
     dev: true
 
   /vitest/0.27.2_jsdom@21.0.0:

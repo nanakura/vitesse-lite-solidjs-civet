@@ -6,8 +6,14 @@ import civetPlugin from 'vite-plugin-civet'
 import Pages from 'vite-plugin-pages'
 import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import path from 'path'
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '~/': `${path.resolve(__dirname, 'src')}/`,
+    },
+  },
   plugins: [
     solidPlugin(),
     civetPlugin({
