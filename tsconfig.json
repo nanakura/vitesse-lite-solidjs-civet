@@ -3,6 +3,7 @@
     "strict": true,
     "target": "ESNext",
     "module": "ESNext",
+    "baseUrl": ".",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
